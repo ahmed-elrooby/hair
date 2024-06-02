@@ -1,0 +1,638 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header {
+    background-color: #000000eb;
+
+}
+
+.header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: white;
+    flex-wrap: wrap;
+}
+.header .content .logo h1{
+    color: rgb(0, 131, 143);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgb(0, 131, 143);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .content .links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.header .content .links a {
+
+    color: white;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 8px;
+}
+
+.header .content .links a:hover {
+    color: rgb(0, 131, 143);
+    border-bottom: 1.5px solid rgb(0, 131, 143);
+
+}
+
+/* end header section  */
+.home {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+.home .container .all {
+    display: flex;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.home .container .all .parent {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+.home .container .all .parent img {
+    width: 550px;
+    max-width: 100%;
+    border-radius: 10px
+}
+
+.home .container .all .parent .info {
+
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-transform: capitalize;
+}
+
+.home .container .all .parent .info h1>span {
+    color: rgb(0, 131, 143);
+}
+
+.home .container .all .parent .info p {
+    line-height: 1.6;
+}
+
+.home .container .all .parent .info button {
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: rgb(0, 131, 143);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.home .container .all .parent .info button:hover{
+    background-color: #0095A8;
+}
+
+.dots {
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.dots span {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.dots span:nth-child(2) {
+    background-color: rgb(0, 131, 143);
+}
+
+
+
+/* end home section  */
+
+.title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    position: relative;
+    width: fit-content;
+    margin: auto;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+.title:hover {
+    color: rgb(0, 131, 143);
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 131, 143);
+    bottom: 30px;
+}
+
+.product {
+    padding-bottom: 30px;
+
+}
+
+.product .container .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    color: white;
+}
+
+.product .container .products .card {
+    border: 1px solid white;
+    background-color: rgb(0, 131, 143);
+    border-radius: 5px;
+}
+
+.product .container .products .card img {
+    max-width: 100%;
+    height: 400px;
+    width: 100%;
+}
+
+.product .container .products .card .info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.product .container .products .card .info h5 {
+    font-size: 20px;
+}
+
+.product .container .products .card .info span {
+    font-size: 18px;
+}
+
+.product .container .products .card .info button {
+    padding: 5px 20px;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(0, 131, 143);
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+
+/* start how it work section  */
+.work {
+    padding: 50px 0px;
+}
+
+.work .container .howwork {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+.work .container .card .icon i {
+    font-size: 120px;
+    position: relative;
+    border: 1px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: rgb(0, 131, 143);
+
+
+}
+.work .container .card .icon1 i::after {
+    position: absolute;
+    content: "1";
+    width: 50px;
+    height: 50px;
+    color:white;
+    font-size: 20px;
+    border-radius: 50%;
+    top: 16px;
+    left: -4px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(0, 131, 143);
+    
+}
+.work .container .card .icon2 i::after {
+    position: absolute;
+    content: "2";
+    width: 50px;
+    height: 50px;
+    color:white;
+    font-size: 20px;
+    border-radius: 50%;
+    top: 16px;
+    left: -4px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(0, 131, 143);
+    
+}
+.work .container .card .icon3 i::after {
+    position: absolute;
+    content: "3";
+    width: 50px;
+    height: 50px;
+    color:white;
+    font-size: 20px;
+    border-radius: 50%;
+    top: 16px;
+    left: -4px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(0, 131, 143);
+    
+}
+.work .container .card .info{
+    padding-top: 15px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.work .container .card .info h3{
+    text-transform: capitalize;
+    color: rgb(0, 131, 143);
+    font-size: 20px;
+}
+.work .container .card .info p{
+    line-height: 1.6;
+    text-transform: capitalize;
+}
+
+/* about section  */
+
+.about
+{
+    color: white;
+    padding: 50px 0px;
+}
+.about .container .allData{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.about .container .allData .data
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.about .container .allData .data h1{
+    text-transform: capitalize;
+color: rgb(0, 131, 143);
+}
+.about .container .data p{
+    text-transform: capitalize;
+    line-height: 1.7;
+    color: rgb(255 255 255 / 75%);
+}
+.about .container .allData .data button{
+    width: fit-content;
+    margin: auto;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-size: 18px;
+}
+.about .container .allData .data button:hover{
+    background-color: rgb(0, 131, 143);
+    color: white;
+}
+.about .container .allData .image{
+position: relative;
+}
+.about .container .allData .image img{
+    width: 500px;
+    max-width: 100%;
+    border-radius: 15px;
+
+}
+.about .container .allData .image::after{
+    content: "";
+    position: absolute;
+    left: -3px;
+    width: 20px;
+    height: 100%;
+    background-color: rgb(0, 131, 143);
+    bottom: 0px;
+    border-radius: 10px;
+}
+
+/* start testominal section  */
+.test{
+    padding: 50px 0px;
+    color: white;
+}
+
+.test .container .parCard{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+.test .container .parCard .card{
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgb(0, 131, 143);
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.test .container .parCard .card .img img{
+    max-width: 100%;
+    width: 150px;
+    height: 150px;
+}
+.test .container .parCard .card .dataTes{
+    display: flex;
+    flex-direction: column;
+}
+.test .container .parCard .card .dataTes span{
+    font-size: 27px;
+    font-weight: bold;
+    
+}
+.test .container .parCard .card .dataTes p{
+    text-transform: capitalize;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.772);
+    
+} .test .container .parCard .card .dataTes h3{
+    text-transform: capitalize;
+    color: rgb(0, 131, 143);
+    font-weight: bold;
+    
+}
+/* start contact section */
+
+.contact{
+    padding: 50px 0px;
+    color: white;
+}
+.contact .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.contact .form .inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.contact .form .inputs input:not(input[type="radio"]){
+    outline: none;
+    border: 2px solid rgb(0, 131, 143);
+    text-transform: capitalize;
+    padding: 15px 20px;
+    border-radius: 15px;
+    width: 400px;
+    
+}
+.contact .form .message{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact .form .message textarea{
+    padding: 10px;
+    border: 2px solid rgb(0, 131, 143);
+    border-radius: 10px;
+}
+.contact .form .message input[type="submit"]{
+    padding: 10px 10px ;
+    color: white;
+    background-color: rgb(0, 131, 143);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    font-size: 20px;
+}
+
+.contact .form .message input[type="submit"]:hover{
+    background-color: rgba(0, 131, 143, 0.824);
+}
+
+.radio-group {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.radio-group label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    font-weight: bold;
+}
+.radio-group label:hover {
+    color: rgb(0, 131, 143);
+}
+
+.radio-group input[type="radio"] {
+
+    margin-right: 5px; 
+} 
+/* start  */
+.myProducts{
+    padding: 50px 0px;
+    color: white;
+    
+}
+.myProducts .selected{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+.myProducts .selected .card {
+    border: 1px solid white;
+    background-color: rgb(0, 131, 143);
+    border-radius: 10px;
+}
+
+.myProducts .selected .card img {
+    max-width: 100%;
+    height: 300px;
+    width: 400px;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+
+.myProducts .selected .card .info {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+
+}
+.myProducts .selected .card .info h5 {
+    font-size: 20px;
+}
+.myProducts .selected .card .info button {
+    padding: 5px 20px;
+    width: fit-content;
+    margin: auto;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(0, 131, 143);
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid white;
+}
+.table{
+    justify-content: center;
+    display: flex;
+    width: 500px;
+}
+.table table{
+      
+    background: #fafafa;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0 2px 12px rgba(32,32,32,0.3);
+    width: 400px;
+}
+.table table th,td,tr{
+      padding: 10px 15px;
+
+}
+.table table td{
+        border:1px solid lightgray;
+        color: rgb(0, 131, 143);
+        font-weight: bold;
+
+}
+.table table th{
+    background: #0095A8;
+    color: white;
+    text-transform: capitalize;
+    font-family: "Libre Baskerville", serif;
+    border-top: none;
+    
+
+}
+.table table tr{
+  transition: all 0.4s ease-in-out;
+    text-transform: capitalize;
+    font-size: 17px;
+    cursor: pointer; 
+}
+.table table tr:hover{
+  background-color: #eeeeee;
+      box-shadow: 0 2px 12px rgba(32,32,32,0.3);
+
+
+}
+
+/* end table  */
+
+
+
+
